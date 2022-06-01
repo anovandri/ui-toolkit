@@ -1,2 +1,2 @@
-# ui-toolkit
-React UI Toolkit
+# @kipkip/ui-toolkit
+
