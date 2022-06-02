@@ -3,7 +3,6 @@ const fs = require("fs");
 
 const componentsDir = path.join(__dirname, "package/src/components");
 const componentTree = {};
-const a = {};
 
 if (fs.statSync(componentsDir).isDirectory()) {
   const componentItems = fs.readdirSync(componentsDir);
