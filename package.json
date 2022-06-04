@@ -8,7 +8,11 @@
     "lint": "yarn run lint:eslint",
     "lint:eslint": "eslint .",
     "lint:fix": "yarn run lint:fix:eslint",
-    "lint:fix:eslint": "eslint --fix ."
+    "lint:fix:eslint": "eslint --fix .",
+    "start": "yarn styleguide",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
