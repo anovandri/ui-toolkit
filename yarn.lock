@@ -1259,6 +1259,12 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@kipkip/component-context@https://github.com/anovandri/kipkip-component-context":
+  version "0.0.1"
+  resolved "https://github.com/anovandri/kipkip-component-context#9ad74e8f22463e337e0b5dcfa19fc5e765df7946"
+  dependencies:
+    hoist-non-react-statics "^3.2.0"
+
 "@kipkip/eslint-config@github:anovandri/kipkip-eslint-config":
   version "1.0.0"
   resolved "https://codeload.github.com/anovandri/kipkip-eslint-config/tar.gz/8cfbcd07c18686967df524d20c83d196b1ee8dde"
@@ -6789,6 +6795,13 @@ hoist-non-react-statics@^2.5.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
+
+hoist-non-react-statics@^3.2.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"

@@ -318,6 +318,31 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join(__dirname, "styleguide/src/components/Wrapper")
   },
+  sections: [
+    {
+      name: "Introduction",
+      content: "styleguide/src/sections/Introduction.md",
+      sections: [
+        {
+          name: "Using Components",
+          content: "styleguide/src/sections/InstallingandImporting.md"
+        },
+        {
+          name: "Theming Components",
+          content: "styleguide/src/sections/ThemingComponents.md"
+        },
+        {
+          name: "Understanding Component References",
+          content: "styleguide/src/sections/ComponentsContext.md"
+        },
+        {
+          name: "Developing Locally Inside Another Project",
+          content: "styleguide/src/sections/LocalDevelopment.md"
+        }
+      ],
+      sectionDepth: 2
+    }
+  ],
   webpackConfig: {
     devtool: "source-map",
     module: {

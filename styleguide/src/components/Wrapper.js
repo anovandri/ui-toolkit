@@ -1,19 +1,16 @@
-import { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
+import DefaultWrapper from "react-styleguidist/lib/client/rsg-components/Wrapper/Wrapper";
+import { ComponentsProvider } from "@kipkip/component-context";
+import appComponents from "../appComponents";
 
 class Wrapper extends Component {
-  static propTypes = {
-    /** Description of prop "foo". */
-    baz: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    /** Description of prop "baz". */
-    foo: PropTypes.number
-  }
-  static defaultProps = {
-    foo: 42
-  }
-
   render() {
-    /* ... */
+    return (
+      <ComponentsProvider value={appComponents}>
+        <DefaultWrapper {...this.props} />
+      </ComponentsProvider>
+
+    );
   }
 }
 
