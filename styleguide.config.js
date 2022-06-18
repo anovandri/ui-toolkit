@@ -314,5 +314,31 @@ module.exports = {
         whiteSpace: "pre-wrap"
       }
     }
+  },
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, "styleguide/src/components/Wrapper")
+  },
+  webpackConfig: {
+    devtool: "source-map",
+    module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          include: [
+            path.resolve(__dirname, "package/src"),
+            path.resolve(__dirname, "styleguide/src")
+          ],
+          loader: "babel-loader"
+        },
+        {
+          test: /\.css$/,
+          loader: "style-loader!css-loader"
+        },
+        {
+          test: /README\.md$/,
+          loader: "ignore-loader"
+        }
+      ]
+    }
   }
 };
