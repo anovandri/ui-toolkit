@@ -122,14 +122,6 @@ module.exports = {
           borderWidth: [[1, 0, 0, 0]],
           paddingBottom: "4px"
         }
-      },
-      logo: {
-        borderBottom: [[0]],
-        backgroundImage: "url(storefront-component-library-logo.svg)",
-        backgroundRepeat: "no-repeat",
-        height: 110,
-        backgroundPosition: "25% 50%",
-        backgroundSize: 235
       }
     },
     EditorLoader: {
