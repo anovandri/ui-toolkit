@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div
+  className="Accordion__AccordionWrapper-sc-4bl579-0 byfSbw"
+>
+  <div
+    className="Accordion__AccordionHeader-sc-4bl579-1 fkGixW"
+    onClick={[Function]}
+  >
+    <span>
+      <span
+        className="Accordion__AccordionHeaderLabel-sc-4bl579-2 kVSgrq"
+      >
+        mock label
+      </span>
+      
+    </span>
+    <span
+      className="Accordion__AccordionHeaderIcon-sc-4bl579-4 kMROkG"
+    >
+      iconExpand
+    </span>
+  </div>
+  <div
+    className="Accordion__AccordionContent-sc-4bl579-5 jChPZR"
+  />
+</div>
+`;

@@ -27,12 +27,11 @@ if (fs.statSync(componentsDir).isDirectory()) {
  * @param {String} content - path to markdown content file
  * @returns {Object} with content, name, components keys
  */
-/* function generateSection({ componentNames, name, content }) {
-  const components = componentNames.map((componentName) => {
-    Object.keys(componentTree[componentName]).map((version) => componentTree[componentName][version][0]);
-    return { content, name, components };
-  });
-}*/
+function generateSection({ componentNames, name, content }) {
+  const components = componentNames.map((componentName) =>
+    Object.keys(componentTree[componentName]).map((version) => componentTree[componentName][version])[0]);
+  return { content, name, components };
+}
 
 module.exports = {
   title: "UI Toolkit",
@@ -347,6 +346,18 @@ module.exports = {
         }
       ],
       sectionDepth: 2
+    },
+    {
+      name: "Base Components",
+      sections: [
+        generateSection({
+          componentNames: [
+            "Accordion"
+          ],
+          content: "styleguide/src/sections/Content.md",
+          name: "Content"
+        })
+      ]
     }
   ],
   webpackConfig: {
