@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div>
+  <div
+    className="AccordionFormList__AddNewItemAction-xxsxc-0 cbwaCK"
+  >
+    <div
+      className="AccordionFormList__AddNewItemActionButton-xxsxc-1 hhALZa"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <span
+        className="AccordionFormList__AddNewItemActionIcon-xxsxc-2 cWrEwL"
+      >
+        iconPlus
+      </span>
+      Add an item
+    </div>
+  </div>
+</div>
+`;

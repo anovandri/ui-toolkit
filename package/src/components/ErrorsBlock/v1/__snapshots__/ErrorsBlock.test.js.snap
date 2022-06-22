@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders all error messages 1`] = `
+<div
+  className="ErrorsBlock__ErrorWrapper-sc-1qq1jte-0 fvfarw"
+>
+  <div
+    className="ErrorsBlock__Error-sc-1qq1jte-1 eGTvrE"
+    data-name="a"
+  >
+    
+    Message One
+  </div>
+  <div
+    className="ErrorsBlock__Error-sc-1qq1jte-1 eGTvrE"
+    data-name="b"
+  >
+    
+    Message Two
+  </div>
+</div>
+`;
+
+exports[`renders nothing when there are no errors 1`] = `null`;

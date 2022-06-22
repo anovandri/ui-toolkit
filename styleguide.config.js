@@ -352,10 +352,31 @@ module.exports = {
       sections: [
         generateSection({
           componentNames: [
+            "Button"
+          ],
+          content: "styleguide/src/sections/Actions.md",
+          name: "Actions"
+        }),
+        generateSection({
+          componentNames: [
             "Accordion"
           ],
           content: "styleguide/src/sections/Content.md",
           name: "Content"
+        }),
+        generateSection({
+          componentNames: [
+            "AccordionFormList",
+            "Checkbox",
+            "ErrorsBlock",
+            "Field",
+            "MultiSelect",
+            "PhoneNumberInput",
+            "RegionInput",
+            "TextInput"
+          ],
+          content: "styleguide/src/sections/Forms.md",
+          name: "Forms"
         })
       ]
     }

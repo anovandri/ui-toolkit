@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div
+  className="PhoneNumberInput__InputWrapper-sc-10ji00k-0 gNRtrs"
+  value=""
+>
+  <input
+    className="PhoneNumberInput__StyledInput-sc-10ji00k-1 hrkKVY"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    readOnly={false}
+    type="text"
+    value=""
+  />
+  <div
+    className="PhoneNumberInput__IconWrapper-sc-10ji00k-2 cKEsIE"
+    onClick={[Function]}
+    value=""
+  />
+</div>
+`;
