@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render default display, with profile image and no edit link 1`] = `
+<div
+  className="AccountProfileInfo__AccountProfileInfoContainer-sc-7tb9iw-0 dVZNwa"
+>
+  ProfileImage({"size":80,"viewer":"[Object]"})
+  <div
+    className="AccountProfileInfo__AccountProfileInfoTextContainer-sc-7tb9iw-1 kFCxyF"
+  >
+    <span
+      className="AccountProfileInfo__ViewerNameText-sc-7tb9iw-3 dTDSBa"
+    >
+      John Doe
+    </span>
+    <span
+      className="AccountProfileInfo__ViewerEmailText-sc-7tb9iw-2 kHwnqc"
+    >
+      john@doe.com
+    </span>
+  </div>
+</div>
+`;

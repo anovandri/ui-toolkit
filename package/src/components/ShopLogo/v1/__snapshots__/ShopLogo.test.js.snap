@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div
+  className="ShopLogo__Container-svm9iq-0 cEugor"
+>
+  <img
+    alt="Reaction"
+    className="ShopLogo__Logo-svm9iq-1 jdwbgE"
+    src="//placehold.it/60"
+  />
+</div>
+`;

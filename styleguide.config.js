@@ -395,6 +395,25 @@ module.exports = {
           name: "Menus"
         })
       ]
+    },
+    {
+      name: "Storefront Components",
+      sections: [
+        generateSection({
+          componentNames: [
+            "ShopLogo"
+          ],
+          content: "styleguide/src/sections/General.md",
+          name: "General"
+        }),
+        generateSection({
+          componentNames: [
+            "AccountProfileInfo"
+          ],
+          content: "styleguide/src/sections/Account.md",
+          name: "Account"
+        })
+      ]
     }
   ],
   webpackConfig: {
