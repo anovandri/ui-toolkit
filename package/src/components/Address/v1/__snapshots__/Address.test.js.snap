@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot with required props 1`] = `
+<address
+  className="Address__AddressElement-sc-1lbozag-0 dMILSL"
+>
+  Salvos Seafood
+   
+  <br />
+  7742 Hwy 23
+   
+  <br />
+  Belle Chasse
+  , 
+  LA
+   
+  <br />
+  70037
+   
+  <br />
+  US
+</address>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div>
+  <div
+    className="SelectableList__StyledList-g9eg2t-3 isaNrx"
+  >
+    <fieldset>
+      <div
+        className="SelectableList__StyledWrapper-g9eg2t-2 rwddf"
+      >
+        SelectableItem({"detail":"$12.00","isChecked":false,"isLeftAligned":false,"isReadOnly":false,"label":"Priority shipping","value":"123"})
+      </div>
+      <div
+        className="SelectableList__StyledWrapper-g9eg2t-2 rwddf"
+      >
+        SelectableItem({"detail":"$5.00","isChecked":false,"isLeftAligned":false,"isReadOnly":false,"label":"Expedited shipping","value":"333"})
+      </div>
+      <div
+        className="SelectableList__StyledWrapper-g9eg2t-2 rwddf"
+      >
+        SelectableItem({"detail":"$0.00","isChecked":false,"isLeftAligned":false,"isReadOnly":false,"label":"Free shipping","value":"2455"})
+      </div>
+    </fieldset>
+  </div>
+</div>
+`;

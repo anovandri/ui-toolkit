@@ -352,14 +352,18 @@ module.exports = {
       sections: [
         generateSection({
           componentNames: [
-            "Button"
+            "Button",
+            "Link"
           ],
           content: "styleguide/src/sections/Actions.md",
           name: "Actions"
         }),
         generateSection({
           componentNames: [
-            "Accordion"
+            "Accordion",
+            "Address",
+            "InlineAlert",
+            "ProgressiveImage"
           ],
           content: "styleguide/src/sections/Content.md",
           name: "Content"
@@ -373,10 +377,22 @@ module.exports = {
             "MultiSelect",
             "PhoneNumberInput",
             "RegionInput",
+            "QuantityInput",
+            "Select",
+            "SelectableItem",
+            "SelectableList",
             "TextInput"
           ],
           content: "styleguide/src/sections/Forms.md",
           name: "Forms"
+        }),
+        generateSection({
+          componentNames: [
+            "InPageMenu",
+            "InPageMenuItem"
+          ],
+          content: "styleguide/src/sections/Menus.md",
+          name: "Menus"
         })
       ]
     }

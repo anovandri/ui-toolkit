@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InPageMenuItem basic component 1`] = `"Link({\\"href\\":\\"/test/url/\\",\\"children\\":\\"[Object]\\"})"`;

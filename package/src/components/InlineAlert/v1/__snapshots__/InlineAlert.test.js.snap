@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot no props 1`] = `
+<div
+  className="InlineAlert__StyledDiv-sc-1h5bs26-0 jGEluF"
+>
+  
+</div>
+`;

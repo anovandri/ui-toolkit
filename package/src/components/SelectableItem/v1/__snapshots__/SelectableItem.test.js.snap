@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot with empty props 1`] = `
+<div>
+  <div
+    className="SelectableItem__StyledItem-sujxl5-5 eHDjjl"
+  >
+    <input
+      checked={false}
+      className="SelectableItem__StyledInput-sujxl5-2 bMFTyC"
+      disabled={false}
+      id="radio_SelectableItem_1"
+      onChange={[Function]}
+      type="radio"
+      value="detail"
+    />
+    <label
+      className="SelectableItem__StyledLabel-sujxl5-0 iYIqME"
+      htmlFor="radio_SelectableItem_1"
+    >
+      <span
+        className="SelectableItem__StyledRadioButton-sujxl5-1 dvskeC"
+      />
+      Label
+    </label>
+    <div
+      className="SelectableItem__StyledDetail-sujxl5-3 bqAZNw"
+    >
+      Detail
+    </div>
+  </div>
+</div>
+`;

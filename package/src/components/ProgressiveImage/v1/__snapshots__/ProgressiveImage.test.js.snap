@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic ProgressiveImage snapshot 1`] = `
+<div
+  className="ProgressiveImage__ImageWrapper-sc-17mhlc5-0 cUzDbO"
+/>
+`;
