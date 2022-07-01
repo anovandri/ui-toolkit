@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot with only required props 1`] = `
+<div>
+  <div
+    className="AddressReview__FormWrapper-ejaf5j-0 hOKqDW"
+  >
+    <div
+      className={null}
+      style={Object {}}
+    >
+      SelectableList({"isHorizontal":true,"isStacked":true,"options":"[Object]","name":"AddressReview","value":"suggested","isReadOnly":false})
+    </div>
+  </div>
+</div>
+`;

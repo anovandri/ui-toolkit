@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div
+  className="CheckoutActionComplete__ActionContainer-sc-1eto0jc-0 fZQwFM"
+>
+  <div
+    className="CheckoutActionComplete__ActionTitle-sc-1eto0jc-1 bfeikS"
+  >
+    2
+    . 
+    Shipping address
+  </div>
+  <div
+    className="CheckoutActionComplete__ActionDetail-sc-1eto0jc-2 iTdXcw"
+  >
+    &lt;div&gt;&lt;p&gt;123 Main Street&lt;/p&gt;&lt;p&gt;Anytown, USA 01776&lt;/p&gt;&lt;/div&gt;
+  </div>
+  <div
+    className="CheckoutActionComplete__ActionButton-sc-1eto0jc-3 ifJBte"
+  >
+    Button({"actionType":"important","isShortHeight":true,"isTextOnly":true,"children":"Change"})
+  </div>
+</div>
+`;

@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Displays a summary of the current items in the cart 1`] = `
+<table
+  className="CartSummary__Table-gw0hf0-0 fvOjXW"
+>
+  <thead>
+    <tr>
+      <th
+        className="CartSummary__Th-gw0hf0-1 ifWTnF"
+      >
+        <span
+          className="CartSummary__Title-gw0hf0-5 kIkzlM"
+        >
+          Cart Summary
+        </span>
+      </th>
+      <th
+        className="CartSummary__Thr-gw0hf0-2 eYiJQi"
+      >
+        3 items
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td
+        className="CartSummary__Td-gw0hf0-3 caQpJY"
+      >
+        Items
+        :
+      </td>
+      <td
+        className="CartSummary__TdValue-gw0hf0-4 fxLxxL CartSummary__Td-gw0hf0-3 caQpJY"
+      >
+        $246.22
+      </td>
+    </tr>
+    <tr>
+      <td
+        className="CartSummary__Td-gw0hf0-3 caQpJY"
+      >
+        Shipping
+        :
+      </td>
+      <td
+        className="CartSummary__TdValue-gw0hf0-4 fxLxxL CartSummary__Td-gw0hf0-3 caQpJY"
+      >
+        3-5 Days
+      </td>
+    </tr>
+    <tr>
+      <td
+        className="CartSummary__Td-gw0hf0-3 caQpJY"
+      >
+        Surcharges
+        :
+      </td>
+      <td
+        className="CartSummary__TdValue-gw0hf0-4 fxLxxL CartSummary__Td-gw0hf0-3 caQpJY"
+      >
+        -
+      </td>
+    </tr>
+    <tr>
+      <td
+        className="CartSummary__TdTax-gw0hf0-7 itczem"
+      >
+        Tax
+        :
+      </td>
+      <td
+        className="CartSummary__TdTaxValue-gw0hf0-8 ftdxCM CartSummary__Td-gw0hf0-3 caQpJY"
+      >
+        -
+      </td>
+    </tr>
+    <tr>
+      <td
+        className="CartSummary__TdTotal-gw0hf0-9 fsliCc"
+      >
+        Order total
+        :
+      </td>
+      <td
+        className="CartSummary__TdTotalValue-gw0hf0-10 inNMmw CartSummary__Td-gw0hf0-3 czWrnf"
+      >
+        <span
+          className="CartSummary__Total-gw0hf0-11 czJsiD"
+        >
+          $300.424
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

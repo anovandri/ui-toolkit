@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot without props 1`] = `
+<div
+  className="CartItemDetail__Detail-sc-19dxl4s-0 hglXBo"
+>
+  <h3
+    className="CartItemDetail__Title-sc-19dxl4s-1 jUUBUh"
+  >
+    <a
+      href=""
+    />
+  </h3>
+</div>
+`;

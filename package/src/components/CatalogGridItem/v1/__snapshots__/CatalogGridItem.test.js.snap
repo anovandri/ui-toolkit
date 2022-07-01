@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogGridItem basic snapshot 1`] = `
+<div>
+  Link({"href":"/product/basic-reaction-product","children":"[Object]"})
+</div>
+`;

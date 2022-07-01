@@ -1,3 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`basic snapshot with only the components and required props should render a TextInput 1`] = `"TextInput({\\"name\\":\\"region\\"})"`;
+exports[`basic snapshot with only the components and required props should render a TextInput 1`] = `
+<div
+  className="TextInput__InputWrapper-sc-14yowh4-0 kMIpag"
+  value=""
+>
+  <input
+    className="TextInput__StyledInput-sc-14yowh4-1 eYIAmU"
+    name="region"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    readOnly={false}
+    type="text"
+    value=""
+  />
+</div>
+`;

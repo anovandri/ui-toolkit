@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
 import { CustomPropTypes } from "../../../utils";
 
+import InPageMenuItem from "../../InPageMenuItem/v1/InPageMenuItem"
+
 const InPageMenuContainer = styled.div`
   box-sizing: border-box;
   display: flex;
@@ -32,7 +34,7 @@ class InPageMenu extends Component {
        * Pass either the Reaction InPageMenuItem component or your own component that
        * accepts compatible props.
        */
-      InPageMenuItem: CustomPropTypes.component.isRequired
+      InPageMenuItem: CustomPropTypes.component
     }).isRequired,
     /**
      * An array that contains objects of label and navigational data for each InPageMenuItem
@@ -50,7 +52,7 @@ class InPageMenu extends Component {
   };
 
   render() {
-    const { className, components: { InPageMenuItem }, menuItems } = this.props;
+    const { className, components: { }, menuItems } = this.props;
 
     return (
       <InPageMenuContainer className={className}>

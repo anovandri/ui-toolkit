@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot with empty props 1`] = `
+<div
+  className="CartItems__Items-k6awq9-0 iwFXkj"
+/>
+`;

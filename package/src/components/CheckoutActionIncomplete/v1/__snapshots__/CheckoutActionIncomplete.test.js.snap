@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div
+  className="CheckoutActionIncomplete__CheckoutActionIncompleteContainer-szupzo-0 dlCFpR"
+>
+  2. Shipping information
+</div>
+`;

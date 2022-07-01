@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+Array [
+  <h3
+    className="FinalReviewCheckoutAction__Title-sc-1pug7i3-0 cQiADA"
+  >
+    4
+    . 
+    Payment Information
+  </h3>,
+  <div
+    className="FinalReviewCheckoutAction__Summary-sc-1pug7i3-1 kwcNNT"
+  >
+    <div
+      className="FinalReviewCheckoutAction__Items-sc-1pug7i3-3 jrPDQi"
+    >
+      CartItems({"isReadOnly":true,"items":"[Object]"})
+    </div>
+    <div
+      className="FinalReviewCheckoutAction__CartSummaryWrapper-sc-1pug7i3-2 bhijYY"
+    >
+      CartSummary({"isDense":true,"displayShipping":"$5.25","displaySubtotal":"$275.77","displayTax":"$7.62","displayTotal":"$288.64"})
+    </div>
+  </div>,
+]
+`;

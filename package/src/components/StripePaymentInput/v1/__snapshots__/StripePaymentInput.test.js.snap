@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div>
+  StripeForm({})
+  <div
+    className="StripePaymentInput__SecureCaption-sc-1v8uf9e-0 hRALkQ"
+  >
+    <span
+      className="StripePaymentInput__IconLockSpan-sc-1v8uf9e-1 iUHIEo"
+    />
+     
+    <span
+      className="StripePaymentInput__Span-sc-1v8uf9e-2 cxYXqW"
+    >
+      Your Information is private and secure.
+    </span>
+  </div>
+</div>
+`;

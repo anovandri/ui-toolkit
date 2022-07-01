@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+Array [
+  <h3
+    className="FulfillmentOptionsCheckoutAction__Title-sc-17i80ic-0 jdJpKf"
+  >
+    2
+    . 
+    Choose a shipping method
+  </h3>,
+  "",
+  <div
+    className={null}
+    style={Object {}}
+  >
+    SelectableList({"isBordered":true,"isSaving":false,"name":"selectedFulfillmentOptionId","options":"[Object]"})
+  </div>,
+]
+`;

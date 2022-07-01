@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
+import Button from "../../Button/v1/Button"
+import Accordion from "../../Accordion/v1/Accordion"
 import { applyTheme, addTypographyStyles, CustomPropTypes } from "../../../utils";
 
 const AddNewItemAction = styled.div`
@@ -103,12 +105,12 @@ class AccordionFormList extends Component {
        * Pass either the Reaction Accordion component or your own component that
        * accepts compatible props.
        */
-      Accordion: CustomPropTypes.component.isRequired,
+      Accordion: CustomPropTypes.component,
       /**
        * Pass either the Reaction iconPlus component or your own component that
        * accepts compatible props.
        */
-      iconPlus: PropTypes.node.isRequired,
+      iconPlus: PropTypes.node,
       /**
        * The form component to render when adding a new item. It must have a
        * "submit" method on the instance or forward "ref" to a component that does.
@@ -218,7 +220,7 @@ class AccordionFormList extends Component {
     const {
       addNewItemButtonText,
       cancelButtonText,
-      components: { Accordion, Button, iconPlus, ItemEditForm },
+      components: { iconPlus, ItemEditForm },
       deleteItemButtonText,
       isWaiting,
       items,
@@ -280,15 +282,13 @@ class AccordionFormList extends Component {
   }
 
   renderEntryForm() {
-    const { cancelButtonText, components: { Button, ItemAddForm }, entryFormSubmitButtonText, isWaiting, itemAddFormProps } = this.props;
+    const { cancelButtonText, components: { ItemAddForm }, entryFormSubmitButtonText, isWaiting, itemAddFormProps } = this.props;
     return (
       <Fragment>
-        <ItemAddForm
-          {...itemAddFormProps}
-          ref={(el) => {
-            this._addItemForm = el;
-          }}
-        />
+        <ItemAddForm {...itemAddFormProps} ref={(el) => {
+          this._addItemForm = el;
+        }}>
+        </ItemAddForm>
         <FormActions>
           <Button actionType="secondary" onClick={this.handleEntryFormCancel}>
             {cancelButtonText}
@@ -300,7 +300,6 @@ class AccordionFormList extends Component {
       </Fragment>
     );
   }
-
   render() {
     const { className } = this.props;
     const { status } = this.state;

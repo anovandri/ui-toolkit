@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display error warning about required prop 1`] = `"Failed undefined type: The undefined \`displayPrice\` is marked as required in \`<<anonymous>>\`, but its value is \`undefined\`."`;

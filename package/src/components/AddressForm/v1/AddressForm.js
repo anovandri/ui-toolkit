@@ -7,6 +7,14 @@ import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
 import { applyTheme, CustomPropTypes, getRequiredValidator } from "../../../utils";
 
+import Checkbox from "../../Checkbox/v1/Checkbox";
+import ErrorsBlock from "../../ErrorsBlock/v1/ErrorsBlock";
+import Field from "../../Field/v1/Field";
+import TextInput from "../../TextInput/v1/TextInput";
+import Select from "../../Select/v1/Select";
+import PhoneNumberInput from "../../PhoneNumberInput/v1/PhoneNumberInput";
+import RegionInput from "../../RegionInput/v1/RegionInput";
+
 const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -77,37 +85,37 @@ class AddressForm extends Component {
        * Pass either the Reaction Checkbox component or your own component that is
        * compatible with ReactoForm.
        */
-      Checkbox: CustomPropTypes.component.isRequired,
+      Checkbox: CustomPropTypes.component,
       /**
        * Pass either the Reaction ErrorsBlock component or your own component that is
        * compatible with ReactoForm.
        */
-      ErrorsBlock: CustomPropTypes.component.isRequired,
+      ErrorsBlock: CustomPropTypes.component,
       /**
        * Pass either the Reaction Field component or your own component that is
        * compatible with ReactoForm.
        */
-      Field: CustomPropTypes.component.isRequired,
+      Field: CustomPropTypes.component,
       /**
        * Pass either the Reaction TextInput component or your own component that is
        * compatible with ReactoForm.
        */
-      TextInput: CustomPropTypes.component.isRequired,
+      TextInput: CustomPropTypes.component,
       /**
        * Pass either the Reaction Select component or your own component that is
        * compatible with ReactoForm.
        */
-      Select: CustomPropTypes.component.isRequired,
+      Select: CustomPropTypes.component,
       /**
        * Pass either the Reaction PhoneNumberInput component or your own component that is
        * compatible with ReactoForm.
        */
-      PhoneNumberInput: CustomPropTypes.component.isRequired,
+      PhoneNumberInput: CustomPropTypes.component,
       /**
        * Pass either the Reaction RegionInput component or your own component that is
        * compatible with ReactoForm.
        */
-      RegionInput: CustomPropTypes.component.isRequired
+      RegionInput: CustomPropTypes.component
     }).isRequired,
     /**
      * The text for the "Country" label text.
@@ -359,7 +367,7 @@ class AddressForm extends Component {
       className,
       cityLabelText,
       cityPlaceholderText,
-      components: { Checkbox, ErrorsBlock, Field, TextInput, Select, PhoneNumberInput, RegionInput },
+      components: { },
       countryLabelText,
       countryPlaceholderText,
       errors,

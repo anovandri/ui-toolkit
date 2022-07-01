@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot with props 1`] = `
+<div
+  className="MiniCart__Cart-sc-12z5qo3-0 dBzSjN"
+>
+  <div
+    className="MiniCart__Items-sc-12z5qo3-1 cUMRTj"
+  >
+    CartItems({"items":"[Object]","isMiniCart":true})
+  </div>
+  <div
+    className="MiniCart__Footer-sc-12z5qo3-2 jzuyVn"
+  >
+    MiniCartSummary({"displaySubtotal":"$25.00"})
+    Button({"actionType":"important","isFullWidth":true,"children":"Checkout"})
+    <span
+      className="MiniCart__FooterMessage-sc-12z5qo3-3 XowLk"
+    >
+      Shipping and tax calculated in checkout
+    </span>
+  </div>
+</div>
+`;

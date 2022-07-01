@@ -4,6 +4,9 @@ import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
 import { addTypographyStyles, applyTheme, CustomPropTypes } from "../../../utils";
 
+import ProfileImage from "../../ProfileImage/v1/ProfileImage";
+import Button from "../../Button/v1/Button";
+
 const AccountProfileInfoContainer = styled.div`
   display: flex;
   position: relative;
@@ -109,7 +112,7 @@ class AccountProfileInfo extends Component {
   }
 
   viewerProfileEditLink = () => {
-    const { components: { Button }, onClickEdit, shouldShowEditButton, editAccountButtonText } = this.props;
+    const { components: { }, onClickEdit, shouldShowEditButton, editAccountButtonText } = this.props;
 
     if (shouldShowEditButton) {
       return (
@@ -120,7 +123,7 @@ class AccountProfileInfo extends Component {
   }
 
   render() {
-    const { className, components: { ProfileImage }, viewer } = this.props;
+    const { className, components: { }, viewer } = this.props;
 
     return (
       <AccountProfileInfoContainer className={className}>

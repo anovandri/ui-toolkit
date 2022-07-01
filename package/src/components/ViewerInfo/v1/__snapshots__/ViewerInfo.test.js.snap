@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render with profile image 1`] = `
+<div
+  className="ViewerInfo__ViewerInfoContainer-sc-1bbk0na-0 cjLekl"
+>
+  ProfileImage({"size":30,"viewer":"[Object]"})
+  <span
+    className="ViewerInfo__ViewerFirstNameText-sc-1bbk0na-1 fkSAms"
+  >
+    email@domain.com
+  </span>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render email address of a user with an account 1`] = `
+<div
+  className="CheckoutEmailAddress__StyledDiv-qcj1du-0 kFaYbO"
+>
+  Signed in as
+   
+  <span
+    className="CheckoutEmailAddress__StyledSpan-qcj1du-1 kHJcLY"
+  >
+    account.email@example.com
+  </span>
+</div>
+`;

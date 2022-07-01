@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot with empty address 1`] = `
+Array [
+  <h3
+    className="ShippingAddressCheckoutAction__Title-uzc8gc-0 fWdGyh"
+  >
+    1
+    . 
+    Shipping Address
+  </h3>,
+  "",
+  "AddressCapture({\\"addressFormProps\\":\\"[Object]\\",\\"addressReviewProps\\":\\"[Object]\\",\\"isSaving\\":false})",
+]
+`;

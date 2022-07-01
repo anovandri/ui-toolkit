@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders only subtotal 1`] = `
+<table
+  className="MiniCartSummary__Table-ycidqe-0 dNgsSn"
+>
+  <tbody>
+    <tr>
+      <td
+        className="MiniCartSummary__Td-ycidqe-1 RlQgL"
+      >
+        Subtotal
+      </td>
+      <td
+        className="MiniCartSummary__TdValue-ycidqe-2 SMhaH"
+      >
+        $24.42
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

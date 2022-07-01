@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutAction with \`active\` status & label 1`] = `
+<div>
+  <span />
+</div>
+`;

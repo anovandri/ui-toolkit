@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogGrid default responsive snapshot 1`] = `
+<div
+  className="CatalogGrid__GridContainer-sc-1v5ryzp-0 fmvdLr"
+>
+  <div
+    className="CatalogGrid__GridItem-sc-1v5ryzp-1 dSKKVM"
+  >
+    CatalogGridItem({"product":"[Object]","currencyCode":"USD","placeholderImageURL":"/resources/placeholder.gif"})
+  </div>
+  <div
+    className="CatalogGrid__GridItem-sc-1v5ryzp-1 dSKKVM"
+  >
+    CatalogGridItem({"product":"[Object]","currencyCode":"USD","placeholderImageURL":"/resources/placeholder.gif"})
+  </div>
+  <div
+    className="CatalogGrid__GridItem-sc-1v5ryzp-1 dSKKVM"
+  >
+    CatalogGridItem({"product":"[Object]","currencyCode":"USD","placeholderImageURL":"/resources/placeholder.gif"})
+  </div>
+  <div
+    className="CatalogGrid__GridItem-sc-1v5ryzp-1 dSKKVM"
+  >
+    CatalogGridItem({"product":"[Object]","currencyCode":"USD","placeholderImageURL":"/resources/placeholder.gif"})
+  </div>
+  <div
+    className="CatalogGrid__GridItem-sc-1v5ryzp-1 dSKKVM"
+  >
+    CatalogGridItem({"product":"[Object]","currencyCode":"USD","placeholderImageURL":"/resources/placeholder.gif"})
+  </div>
+  <div
+    className="CatalogGrid__GridItem-sc-1v5ryzp-1 dSKKVM"
+  >
+    CatalogGridItem({"product":"[Object]","currencyCode":"USD","placeholderImageURL":"/resources/placeholder.gif"})
+  </div>
+</div>
+`;

@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import { withComponents } from "@kipkip/component-context";
 import { CustomPropTypes } from "../../../utils";
 
+import Select from "../../Select/v1/Select";
+import TextInput from "../../TextInput/v1/TextInput";
+
 class RegionInput extends Component {
   static isFormInput = true;
 
@@ -25,12 +28,12 @@ class RegionInput extends Component {
        * Pass either the Reaction TextInput component or your own component that is
        * compatible with ReactoForm.
        */
-      TextInput: CustomPropTypes.component.isRequired,
+      TextInput: CustomPropTypes.component,
       /**
        * Pass either the Reaction Select component or your own component that is
        * compatible with ReactoForm.
        */
-      Select: CustomPropTypes.component.isRequired
+      Select: CustomPropTypes.component
     }).isRequired,
     /**
      * Name of input
@@ -49,7 +52,7 @@ class RegionInput extends Component {
   render() {
     const {
       className,
-      components: { Select, TextInput },
+      components: { },
       options,
       value,
       ...props

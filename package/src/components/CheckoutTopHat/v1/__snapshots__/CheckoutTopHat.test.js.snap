@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Top Hat with message 1`] = `
+<div
+  className="CheckoutTopHat__TopHatContainer-sc-1k357sp-0 iWMVcR"
+>
+  <div
+    className="CheckoutTopHat__TopHatMessage-sc-1k357sp-1 huxmqO"
+  >
+    Free Shipping + Free Returns
+  </div>
+</div>
+`;

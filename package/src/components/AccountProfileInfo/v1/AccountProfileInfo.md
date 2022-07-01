@@ -37,7 +37,7 @@ const viewer = {
 <AccountProfileInfo viewer={viewer} />
 ```
 
-####With edit link
+#### With edit link
 ```jsx
 const viewer = {
   firstName: "John",

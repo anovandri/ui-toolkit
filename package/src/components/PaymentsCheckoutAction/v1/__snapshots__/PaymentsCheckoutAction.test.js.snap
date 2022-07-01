@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot 1`] = `
+<div>
+  <h3
+    className="PaymentsCheckoutAction__Title-sc-1w462eg-0 jIhIfS"
+  >
+    3
+    . 
+    Payment
+  </h3>
+  
+  SelectableList({"name":"paymentMethodList","options":"[Object]","value":"stripe_card"})
+  StripePaymentInput({})
+  <h3
+    className="PaymentsCheckoutAction__Title-sc-1w462eg-0 jIhIfS"
+  >
+    Billing Address
+  </h3>
+  AddressChoice({})
+</div>
+`;

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic snapshot with empty props 1`] = `
+<div
+  className="CartItem__Item-sc-1chhzjd-0 hgbZge"
+>
+  <div
+    className="CartItem__ItemContent-sc-1chhzjd-1 cspDR"
+  >
+    <div
+      className="CartItem__ItemContentDetail-sc-1chhzjd-2 dXbaPY"
+    >
+      <div
+        className="CartItem__ItemContentDetailInner-sc-1chhzjd-3 iifmFZ"
+      >
+        <div
+          className="CartItem__ItemContentDetailInfo-sc-1chhzjd-4 fPVQzn"
+        >
+          CartItemDetail({"isMiniCart":false,"quantity":null})
+          StockWarning({})
+        </div>
+        <div
+          className="CartItem__ItemContentQuantityInput-sc-1chhzjd-5 ikrIsj"
+        >
+          QuantityInput({})
+        </div>
+      </div>
+      <button
+        className="CartItem__ItemRemoveButton-sc-1chhzjd-10 bQREZW"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+  <div
+    className="CartItem__ItemContentPrice-sc-1chhzjd-6 bvmocn"
+  >
+    Price({"displayPrice":"$9.99","hasPriceBottom":false})
+    <div
+      className="CartItem__ItemContentSubtotal-sc-1chhzjd-7 hGsgJV"
+    >
+      <div
+        className="CartItem__ItemContentSubtotalTitle-sc-1chhzjd-8 jiBkaK"
+      >
+        Total
+         (
+        ):
+      </div>
+      <div
+        className="CartItem__ItemContentSubtotalDisplay-sc-1chhzjd-9 cxLsEU"
+      />
+    </div>
+  </div>
+</div>
+`;

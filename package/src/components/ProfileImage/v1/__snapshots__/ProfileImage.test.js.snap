@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileImage component with image snapshot 1`] = `
+<div
+  className="ProfileImage__ViewerImageCircle-vpimxr-0 gfEmLF"
+  style={
+    Object {
+      "height": "80px",
+      "width": "80px",
+    }
+  }
+>
+  <img
+    alt="John Doe"
+    className="ProfileImage__ViewerImage-vpimxr-2 jbPjLJ"
+    src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon&f=y"
+  />
+</div>
+`;

@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
 import { applyTheme, addTypographyStyles, CustomPropTypes, preventAccidentalDoubleClick } from "../../../utils";
 
+import Link from "../../Link/v1/Link";
+
 const InPageMenuItemContainer = styled.div`
   align-items: center;
   ${(props) => {
@@ -66,7 +68,7 @@ class InPageMenuItem extends Component {
        * Pass either the Reaction Link component or your own component that
        * accepts compatible props.
        */
-      Link: CustomPropTypes.component.isRequired
+      Link: CustomPropTypes.component
     }).isRequired,
     /**
      * URL to provide to MenuItem
@@ -102,7 +104,7 @@ class InPageMenuItem extends Component {
   });
 
   render() {
-    const { className, components: { iconExpand, Link }, href, isSelected, label } = this.props;
+    const { className, components: { iconExpand }, href, isSelected, label } = this.props;
 
     return (
       <Link href={href} onClick={this.handleClick}>

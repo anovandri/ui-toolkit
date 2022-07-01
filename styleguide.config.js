@@ -408,10 +408,55 @@ module.exports = {
         }),
         generateSection({
           componentNames: [
-            "AccountProfileInfo"
+            "AccountProfileInfo",
+            "AddressBook",
+            "ProfileImage",
+            "ViewerInfo"
           ],
           content: "styleguide/src/sections/Account.md",
           name: "Account"
+        }),
+        generateSection({
+          componentNames: [
+            "CartEmptyMessage",
+            "CartItem",
+            "CartItems",
+            "CartItemDetail",
+            "CartSummary",
+            "MiniCart",
+            "MiniCartSummary"
+          ],
+          content: "styleguide/src/sections/Cart.md",
+          name: "Cart"
+        }),
+        generateSection({
+          componentNames: [
+            "CheckoutAction",
+            "CheckoutActionComplete",
+            "CheckoutActionIncomplete",
+            "CheckoutActions",
+            "CheckoutEmailAddress",
+            "CheckoutTopHat",
+            "ExampleIOUPaymentForm",
+            "FinalReviewCheckoutAction",
+            "FulfillmentOptionsCheckoutAction",
+            "PaymentsCheckoutAction",
+            "ShippingAddressCheckoutAction"
+          ],
+          content: "styleguide/src/sections/Checkout.md",
+          name: "Checkout"
+        }),
+        generateSection({
+          componentNames: [
+            "BadgeOverlay",
+            "CatalogGridItem",
+            "CatalogGrid",
+            "InventoryStatus",
+            "Price",
+            "StockWarning"
+          ],
+          content: "styleguide/src/sections/StorefrontForms.md",
+          name: "Forms"
         })
       ]
     }
