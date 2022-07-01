@@ -41,24 +41,6 @@ class AddressReview extends Component {
      */
     className: PropTypes.string,
     /**
-     * If you've set up a components context using @reactioncommerce/components-context
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction Address component or your own component that
-       * accepts compatible props.
-       */
-      Address: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction SelectableList component or your own component that
-       * accepts compatible props.
-       */
-      SelectableList: CustomPropTypes.component
-    }).isRequired,
-    /**
      * Is data being saved
      */
     isSaving: PropTypes.bool,
@@ -159,7 +141,6 @@ class AddressReview extends Component {
       addressSuggestion,
       addressSuggestionLabelText,
       className,
-      components: { },
       isSaving,
       value
     } = this.props;

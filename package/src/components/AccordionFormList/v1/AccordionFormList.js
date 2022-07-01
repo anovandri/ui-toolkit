@@ -2,8 +2,8 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import Button from "../../Button/v1/Button"
-import Accordion from "../../Accordion/v1/Accordion"
+import Button from "../../Button/v1/Button";
+import Accordion from "../../Accordion/v1/Accordion";
 import { applyTheme, addTypographyStyles, CustomPropTypes } from "../../../utils";
 
 const AddNewItemAction = styled.div`
@@ -287,8 +287,8 @@ class AccordionFormList extends Component {
       <Fragment>
         <ItemAddForm {...itemAddFormProps} ref={(el) => {
           this._addItemForm = el;
-        }}>
-        </ItemAddForm>
+        }}
+        />
         <FormActions>
           <Button actionType="secondary" onClick={this.handleEntryFormCancel}>
             {cancelButtonText}

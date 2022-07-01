@@ -105,35 +105,6 @@ class CheckoutActions extends Component {
      */
     className: PropTypes.string,
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction Button component or your own component that
-       * accepts compatible props.
-       */
-      Button: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction CheckoutAction component or your own component that
-       * accepts compatible props.
-       */
-      CheckoutAction: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction CheckoutActionComplete component or your own component that
-       * accepts compatible props.
-       */
-      CheckoutActionComplete: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction CheckoutActionIncomplete component or your own component that
-       * accepts compatible props.
-       */
-      CheckoutActionIncomplete: CustomPropTypes.component.isRequired
-    }).isRequired,
-    /**
      * The text for the "Place your order" button text when `isSaving` equals `false`.
      */
     isNotSavingButtonText: PropTypes.string,
@@ -242,24 +213,21 @@ class CheckoutActions extends Component {
     return currentActiveActions;
   };
 
-  renderCompleteAction = ({ id, status, completeLabel, component, props }) => {
-    const { components: { } } = this.props;
-    return status === "complete" ? (
-      <CheckoutActionComplete
-        key={id}
-        label={completeLabel}
-        content={component.renderComplete(props)}
-        onClickChangeButton={() => {
-          this.setStateForAction(id, { isActive: true });
-        }}
-      />
-    ) : (
-      <span />
-    );
-  };
+  renderCompleteAction = ({ id, status, completeLabel, component, props }) => (status === "complete" ? (
+    <CheckoutActionComplete
+      key={id}
+      label={completeLabel}
+      content={component.renderComplete(props)}
+      onClickChangeButton={() => {
+        this.setStateForAction(id, { isActive: true });
+      }}
+    />
+  ) : (
+    <span />
+  ));
 
   renderFormActions = (action) => {
-    const { actions, components: { }, cancelButtonText, saveButtonText, isSavingButtonText, isNotSavingButtonText } = this.props;
+    const { actions, cancelButtonText, saveButtonText, isSavingButtonText, isNotSavingButtonText } = this.props;
     const { readyForSave, isSaving } = this.getCurrentActionByID(action.id);
     const lastStep = actions.length - 1 === this.getCurrentActionIndex(action.id);
 
@@ -317,7 +285,6 @@ class CheckoutActions extends Component {
   };
 
   renderAction = (action, currentActiveActions) => {
-    const { components: { } } = this.props;
     const isActive = currentActiveActions.find((_id) => _id === action.id);
     const actionStatus = isActive ? "active" : action.status;
     const { activeLabel, completeLabel, incompleteLabel } = action;

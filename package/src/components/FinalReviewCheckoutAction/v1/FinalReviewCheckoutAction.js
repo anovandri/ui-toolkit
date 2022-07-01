@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { withComponents } from "@kipkip/component-context";
 import styled from "styled-components";
-import { addTypographyStyles, applyTheme, CustomPropTypes } from "../../../utils";
+import { addTypographyStyles, applyTheme } from "../../../utils";
 
 import CartItems from "../../CartItems/v1/CartItems";
 import CartSummary from "../../CartSummary/v1/CartSummary";
@@ -80,25 +80,6 @@ class FinalReviewCheckoutAction extends Component {
       items: PropTypes.arrayOf(PropTypes.object).isRequired
     }),
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction CartItems component or your own component that
-       * accepts compatible props.
-       */
-      CartItems: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction CartSummary component or your own component that
-       * accepts compatible props.
-       */
-      CartSummary: CustomPropTypes.component
-    }),
-    /**
      * Label of workflow step
      */
     label: PropTypes.string.isRequired,
@@ -149,7 +130,6 @@ class FinalReviewCheckoutAction extends Component {
         displayTotal,
         items
       },
-      components: { },
       label,
       stepNumber,
       ...props

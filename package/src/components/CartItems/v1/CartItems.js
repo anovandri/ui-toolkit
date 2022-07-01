@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { CustomPropTypes } from "../../../utils";
 
 import CartItem from "../../CartItem/v1/CartItem";
 
@@ -16,21 +15,6 @@ class CartItems extends Component {
      * it can be useful as a selector in some situations.
      */
     className: PropTypes.string,
-    /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction `CartItem` component or your own component
-       * that takes `items`, `isMiniCart`, `onChangeCartItemQuantity`, and
-       * `onRemoveItemFromCart` props and uses them to render a single cart item.
-       */
-      CartItem: CustomPropTypes.component
-    }).isRequired,
     /**
      * Is in a MiniCart component
      */
@@ -71,7 +55,7 @@ class CartItems extends Component {
   };
 
   render() {
-    const { className, items, components: {  }, ...props } = this.props;
+    const { className, items, ...props } = this.props;
     return (
       <Items className={className}>
         {items.map((item) => <CartItem key={item._id} item={item} {...props} />)}

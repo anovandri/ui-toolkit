@@ -74,50 +74,6 @@ class AddressForm extends Component {
      */
     className: PropTypes.string,
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-    */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction Checkbox component or your own component that is
-       * compatible with ReactoForm.
-       */
-      Checkbox: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction ErrorsBlock component or your own component that is
-       * compatible with ReactoForm.
-       */
-      ErrorsBlock: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction Field component or your own component that is
-       * compatible with ReactoForm.
-       */
-      Field: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction TextInput component or your own component that is
-       * compatible with ReactoForm.
-       */
-      TextInput: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction Select component or your own component that is
-       * compatible with ReactoForm.
-       */
-      Select: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction PhoneNumberInput component or your own component that is
-       * compatible with ReactoForm.
-       */
-      PhoneNumberInput: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction RegionInput component or your own component that is
-       * compatible with ReactoForm.
-       */
-      RegionInput: CustomPropTypes.component
-    }).isRequired,
-    /**
      * The text for the "Country" label text.
      */
     countryLabelText: PropTypes.string,
@@ -367,7 +323,6 @@ class AddressForm extends Component {
       className,
       cityLabelText,
       cityPlaceholderText,
-      components: { },
       countryLabelText,
       countryPlaceholderText,
       errors,

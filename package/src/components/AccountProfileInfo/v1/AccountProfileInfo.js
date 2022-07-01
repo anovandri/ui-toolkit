@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { addTypographyStyles, applyTheme, CustomPropTypes } from "../../../utils";
+import { addTypographyStyles, applyTheme } from "../../../utils";
 
 import ProfileImage from "../../ProfileImage/v1/ProfileImage";
 import Button from "../../Button/v1/Button";
@@ -40,23 +40,6 @@ class AccountProfileInfo extends Component {
      * it can be useful as a selector in some situations.
      */
     className: PropTypes.string,
-    /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * An element to show to link to the edit profile page
-       */
-      Button: CustomPropTypes.component,
-      /**
-     * Profile image component to display
-     */
-      ProfileImage: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
-    }),
     /**
      * The text for the "Edit Account" text, if it is shown.
      */
@@ -112,7 +95,7 @@ class AccountProfileInfo extends Component {
   }
 
   viewerProfileEditLink = () => {
-    const { components: { }, onClickEdit, shouldShowEditButton, editAccountButtonText } = this.props;
+    const { onClickEdit, shouldShowEditButton, editAccountButtonText } = this.props;
 
     if (shouldShowEditButton) {
       return (
@@ -123,7 +106,7 @@ class AccountProfileInfo extends Component {
   }
 
   render() {
-    const { className, components: { }, viewer } = this.props;
+    const { className, viewer } = this.props;
 
     return (
       <AccountProfileInfoContainer className={className}>

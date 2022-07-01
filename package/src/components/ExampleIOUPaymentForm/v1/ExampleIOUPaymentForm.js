@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { useReactoForm } from "reacto-form";
 import { uniqueId } from "lodash";
 import { withComponents } from "@kipkip/component-context";
-import { CustomPropTypes } from "../../../utils";
 
 import ErrorsBlock from "../../ErrorsBlock/v1/ErrorsBlock";
 import Field from "../../Field/v1/Field";
@@ -43,7 +42,6 @@ function ExampleIOUPaymentForm(props, ref) {
 
   const {
     className,
-    components: { },
     isSaving,
     onChange,
     onReadyForSaveChange,
@@ -109,30 +107,6 @@ ExampleIOUPaymentForm.propTypes = {
    * it can be useful as a selector in some situations.
    */
   className: PropTypes.string,
-  /**
-   * If you've set up a components context using
-   * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-   * (recommended), then this prop will come from there automatically. If you have not
-   * set up a components context or you want to override one of the components in a
-   * single spot, you can pass in the components prop directly.
-   */
-  components: PropTypes.shape({
-    /**
-     * Pass either the Reaction ErrorsBlock component or your own component that
-     * accepts compatible props.
-     */
-    ErrorsBlock: CustomPropTypes.component,
-    /**
-     * Pass either the Reaction Field component or your own component that
-     * accepts compatible props.
-     */
-    Field: CustomPropTypes.component,
-    /**
-     * Pass either the Reaction TextInput component or your own component that
-     * accepts compatible props.
-     */
-    TextInput: CustomPropTypes.component
-  }),
   /**
    * Pass true while the input data is in the process of being saved.
    * While true, the form fields are disabled.

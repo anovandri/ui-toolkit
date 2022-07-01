@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { addTypographyStyles, applyTheme, CustomPropTypes } from "../../../utils";
+import { addTypographyStyles, applyTheme } from "../../../utils";
 
 import Button from "../../Button/v1/Button";
 
@@ -66,20 +66,6 @@ class CheckoutActionComplete extends Component {
      */
     className: PropTypes.string,
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction Button component or your own component that
-       * accepts compatible props.
-       */
-      Button: CustomPropTypes.component
-    }).isRequired,
-    /**
      * Component to pass down to show as content
      */
     content: PropTypes.node,
@@ -104,7 +90,7 @@ class CheckoutActionComplete extends Component {
   handleOnChange = () => this.props.onClickChangeButton();
 
   render() {
-    const { className, components: { }, content, label, stepNumber, changeButtonText } = this.props;
+    const { className, content, label, stepNumber, changeButtonText } = this.props;
 
     const step = stepNumber ? <Fragment>{stepNumber}.&nbsp;</Fragment> : null;
 

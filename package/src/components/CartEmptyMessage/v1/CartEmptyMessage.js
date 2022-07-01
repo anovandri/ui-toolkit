@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { addTypographyStyles, applyTheme, CustomPropTypes } from "../../../utils";
+import { addTypographyStyles, applyTheme } from "../../../utils";
 
 import Button from "../../Button/v1/Button";
 
@@ -25,20 +25,6 @@ class CartEmptyMessage extends Component {
      */
     buttonText: PropTypes.string,
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction Button component or your own component that
-       * accepts compatible props.
-       */
-      Button: CustomPropTypes.component
-    }).isRequired,
-    /**
      * Text to display inside the message area
      */
     messageText: PropTypes.string,
@@ -58,8 +44,7 @@ class CartEmptyMessage extends Component {
   }
 
   render() {
-    const { buttonText, components, messageText } = this.props;
-    const { } = components;
+    const { buttonText, messageText } = this.props;
 
     return (
       <Fragment>

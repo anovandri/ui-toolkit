@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { CustomPropTypes } from "../../../utils";
 
-import InPageMenuItem from "../../InPageMenuItem/v1/InPageMenuItem"
+import InPageMenuItem from "../../InPageMenuItem/v1/InPageMenuItem";
 
 const InPageMenuContainer = styled.div`
   box-sizing: border-box;
@@ -23,20 +22,6 @@ class InPageMenu extends Component {
      */
     className: PropTypes.string,
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction InPageMenuItem component or your own component that
-       * accepts compatible props.
-       */
-      InPageMenuItem: CustomPropTypes.component
-    }).isRequired,
-    /**
      * An array that contains objects of label and navigational data for each InPageMenuItem
      */
     menuItems: PropTypes.arrayOf(PropTypes.shape({
@@ -52,7 +37,7 @@ class InPageMenu extends Component {
   };
 
   render() {
-    const { className, components: { }, menuItems } = this.props;
+    const { className, menuItems } = this.props;
 
     return (
       <InPageMenuContainer className={className}>

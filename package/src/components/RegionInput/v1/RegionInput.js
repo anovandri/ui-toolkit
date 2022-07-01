@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { withComponents } from "@kipkip/component-context";
-import { CustomPropTypes } from "../../../utils";
 
 import Select from "../../Select/v1/Select";
 import TextInput from "../../TextInput/v1/TextInput";
@@ -16,25 +15,6 @@ class RegionInput extends Component {
      * it can be useful as a selector in some situations.
      */
     className: PropTypes.string,
-    /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction TextInput component or your own component that is
-       * compatible with ReactoForm.
-       */
-      TextInput: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction Select component or your own component that is
-       * compatible with ReactoForm.
-       */
-      Select: CustomPropTypes.component
-    }).isRequired,
     /**
      * Name of input
      */
@@ -52,7 +32,6 @@ class RegionInput extends Component {
   render() {
     const {
       className,
-      components: { },
       options,
       value,
       ...props

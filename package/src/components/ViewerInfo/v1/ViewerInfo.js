@@ -40,19 +40,6 @@ class ViewerInfo extends Component {
      */
     compact: PropTypes.bool, // eslint-disable-line react/boolean-prop-naming
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-     * Profile image component to display
-     */
-      ProfileImage: PropTypes.oneOfType([PropTypes.string, PropTypes.func])
-    }),
-    /**
      * Enable this prop when you want to display the initials and first name on all screens
      */
     full: PropTypes.bool, // eslint-disable-line react/boolean-prop-naming
@@ -86,7 +73,7 @@ class ViewerInfo extends Component {
   }
 
   render() {
-    const { className, compact, components: { }, full, viewer } = this.props;
+    const { className, compact, full, viewer } = this.props;
     return (
       <ViewerInfoContainer className={className}>
         <ProfileImage size={30} viewer={viewer} />

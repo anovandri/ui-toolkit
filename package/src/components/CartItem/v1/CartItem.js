@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { addTypographyStyles, applyTheme, CustomPropTypes } from "../../../utils";
+import { addTypographyStyles, applyTheme } from "../../../utils";
 
 import CartItemDetail from "../../CartItemDetail/v1/CartItemDetail";
 import Price from "../../Price/v1/Price";
@@ -152,35 +152,6 @@ class CartItem extends Component {
      */
     className: PropTypes.string,
     /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction CartItemDetail component or your own component that
-       * accepts compatible props.
-       */
-      CartItemDetail: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction Price component or your own component that
-       * accepts compatible props.
-       */
-      Price: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction QuantityInput component or your own component that
-       * accepts compatible props.
-       */
-      QuantityInput: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction StockWarning component or your own component that
-       * accepts compatible props.
-       */
-      StockWarning: CustomPropTypes.component
-    }).isRequired,
-    /**
      * Is in a MiniCart component
      */
     isMiniCart: PropTypes.bool,
@@ -324,7 +295,6 @@ class CartItem extends Component {
   render() {
     const {
       className,
-      components,
       isMiniCart,
       isReadOnly,
       productURLPath,
@@ -346,8 +316,6 @@ class CartItem extends Component {
 
     const { displayAmount: displaySubtotal } = subtotal || {};
     const { displayAmount: displayCompareAtPrice } = compareAtPrice || {};
-
-    const { } = components || {};
 
     return (
       <Item className={className}>

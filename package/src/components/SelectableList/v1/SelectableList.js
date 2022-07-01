@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { CustomPropTypes, applyTheme } from "../../../utils";
+import { applyTheme } from "../../../utils";
 
-import SelectableItem from "../../SelectableItem/v1/SelectableItem"
+import SelectableItem from "../../SelectableItem/v1/SelectableItem";
 
 const StyledListAction = styled.div`
   align-options: center;
@@ -123,20 +123,6 @@ class SelectableList extends Component {
      * it can be useful as a selector in some situations.
      */
     className: PropTypes.string,
-    /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction `SelectableItem` component or your own component
-       * that takes `options` props and uses them to render a single item.
-       */
-      SelectableItem: CustomPropTypes.component
-    }).isRequired,
     /**
      * Adds borders to the list and each item
      */
@@ -269,7 +255,7 @@ class SelectableList extends Component {
   }
 
   renderBorderedList() {
-    const { options, listAction, isLeftAligned, isReadOnly, components: { } } = this.props;
+    const { options, listAction, isLeftAligned, isReadOnly } = this.props;
 
     return (
       <BorderedList>
@@ -295,7 +281,7 @@ class SelectableList extends Component {
   }
 
   renderVerticalList() {
-    const { options, listAction, isLeftAligned, isReadOnly, components: { } } = this.props;
+    const { options, listAction, isLeftAligned, isReadOnly } = this.props;
 
     return (
       <StyledList>
@@ -321,7 +307,7 @@ class SelectableList extends Component {
   }
 
   renderHorizontalList() {
-    const { options, listAction, isHorizontal, isReadOnly, components: { } } = this.props;
+    const { options, listAction, isHorizontal, isReadOnly } = this.props;
     return (
       <HorizontalList>
         {options.map((option) => (

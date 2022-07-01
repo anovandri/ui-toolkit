@@ -33,29 +33,6 @@ class AddressBook extends Component {
      */
     className: PropTypes.string,
     /**
-     * If you've set up a components context using @reactioncommerce/components-context
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      /**
-       * Pass either the Reaction AccordionFormList component or your own component that
-       * accepts compatible props.
-       */
-      AccordionFormList: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction AddressForm component or your own component that
-       * accepts compatible props.
-       */
-      AddressForm: CustomPropTypes.component,
-      /**
-       * Pass either the Reaction AddressReview component or your own component that
-       * accepts compatible props.
-       */
-      AddressReview: CustomPropTypes.component
-    }).isRequired,
-    /**
      * The text for the "Delete address" text, if it is shown.
      */
     deleteItemButtonText: PropTypes.string,
@@ -155,7 +132,6 @@ class AddressBook extends Component {
     const {
       account: { addressBook },
       addNewItemButtonText,
-      components: { },
       deleteItemButtonText,
       entryFormSubmitButtonText,
       isSaving
@@ -195,7 +171,7 @@ class AddressBook extends Component {
   }
 
   renderAddressReview() {
-    const { components: { }, value, validatedValue } = this.props;
+    const { value, validatedValue } = this.props;
     return (
       <AddressReview
         ref={(el) => {
