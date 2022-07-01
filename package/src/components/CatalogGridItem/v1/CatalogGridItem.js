@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { addTypographyStyles, applyTheme, CustomPropTypes, preventAccidentalDoubleClick } from "../../../utils";
+import { addTypographyStyles, applyTheme, preventAccidentalDoubleClick } from "../../../utils";
+
+import BadgeOverlay from "../../BadgeOverlay/v1/BadgeOverlay";
+import Link from "../../Link/v1/Link";
+import Price from "../../Price/v1/Price";
+import ProgressiveImage from "../../ProgressiveImage/v1/ProgressiveImage";
 import { priceByCurrencyCode } from "./utils";
 
 const ProductMediaWrapper = styled.div`
@@ -51,19 +56,6 @@ class CatalogGridItem extends Component {
      * it can be useful as a selector in some situations.
      */
     className: PropTypes.string,
-    /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      BadgeOverlay: CustomPropTypes.component.isRequired,
-      Link: CustomPropTypes.component.isRequired,
-      Price: CustomPropTypes.component.isRequired,
-      ProgressiveImage: CustomPropTypes.component.isRequired
-    }),
     /**
      * Currency code to display the price for. Product must include a pricing object with the code in `product.pricing`
      */
@@ -183,7 +175,7 @@ class CatalogGridItem extends Component {
   });
 
   renderProductMedia() {
-    const { components: { ProgressiveImage }, product: { description } } = this.props;
+    const { product: { description } } = this.props;
     const { fit } = this.state;
 
     return (
@@ -200,7 +192,6 @@ class CatalogGridItem extends Component {
 
   renderProductInfo() {
     const {
-      components: { Price },
       currencyCode,
       product: { pricing, title, vendor }
     } = this.props;
@@ -222,7 +213,7 @@ class CatalogGridItem extends Component {
   }
 
   render() {
-    const { className, badgeLabels, components: { BadgeOverlay, Link }, product } = this.props;
+    const { className, badgeLabels, product } = this.props;
 
     const badgeProps = { product };
 

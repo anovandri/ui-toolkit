@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import { ContainerQuery } from "react-container-query";
 import styled from "styled-components";
 import { withComponents } from "@kipkip/component-context";
-import { applyTheme, CustomPropTypes, preventAccidentalDoubleClick } from "../../../utils";
+import { applyTheme, preventAccidentalDoubleClick } from "../../../utils";
+
+import CatalogGridItem from "../../CatalogGridItem/v1/CatalogGridItem";
 
 const GridContainer = styled.div`
   box-sizing: border-box;
@@ -60,16 +62,6 @@ class CatalogGrid extends Component {
      * it can be useful as a selector in some situations.
      */
     className: PropTypes.string,
-    /**
-     * If you've set up a components context using
-     * [@reactioncommerce/components-context](https://github.com/reactioncommerce/components-context)
-     * (recommended), then this prop will come from there automatically. If you have not
-     * set up a components context or you want to override one of the components in a
-     * single spot, you can pass in the components prop directly.
-     */
-    components: PropTypes.shape({
-      CatalogGridItem: CustomPropTypes.component.isRequired
-    }).isRequired,
     /**
      * Currency code to display the price for. Product must include a pricing object with the code in `product.pricing`
      */
@@ -132,7 +124,6 @@ class CatalogGrid extends Component {
     const {
       badgeLabels,
       className,
-      components: { CatalogGridItem },
       currencyCode,
       initialSize,
       onItemClick,
