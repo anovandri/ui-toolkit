@@ -418,6 +418,18 @@ module.exports = {
         }),
         generateSection({
           componentNames: [
+            "BadgeOverlay",
+            "CatalogGridItem",
+            "CatalogGrid",
+            "InventoryStatus",
+            "Price",
+            "StockWarning"
+          ],
+          content: "styleguide/src/sections/StorefrontForms.md",
+          name: "Forms"
+        }),
+        generateSection({
+          componentNames: [
             "CartEmptyMessage",
             "CartItem",
             "CartItems",
@@ -434,29 +446,16 @@ module.exports = {
             "CheckoutAction",
             "CheckoutActionComplete",
             "CheckoutActionIncomplete",
-            "CheckoutActions",
+            /* "CheckoutActions"*/
             "CheckoutEmailAddress",
             "CheckoutTopHat",
-            "ExampleIOUPaymentForm",
             "FinalReviewCheckoutAction",
-            "FulfillmentOptionsCheckoutAction",
-            "PaymentsCheckoutAction",
-            "ShippingAddressCheckoutAction"
+            "FulfillmentOptionsCheckoutAction"
+            /* "PaymentsCheckoutAction"*/
+            /* "ShippingAddressCheckoutAction"*/
           ],
           content: "styleguide/src/sections/Checkout.md",
           name: "Checkout"
-        }),
-        generateSection({
-          componentNames: [
-            "BadgeOverlay",
-            "CatalogGridItem",
-            "CatalogGrid",
-            "InventoryStatus",
-            "Price",
-            "StockWarning"
-          ],
-          content: "styleguide/src/sections/StorefrontForms.md",
-          name: "Forms"
         })
       ]
     }
