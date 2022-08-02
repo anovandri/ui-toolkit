@@ -57,7 +57,7 @@
     "lodash.uniqueid": "~4.0.1",
     "global": "^4.4.0",
     "lodash": "~4.17.21",
-    "mdi-material-ui": "~5.8.0",
+    "mdi-material-ui": "~5.37.0",
     "prop-types": "~15.7.2",
     "react": "~16.9.0",
     "react-container-query": "~0.11.0",
